@@ -13,6 +13,12 @@ function App() {
     setNewTodo("");
   };
 
+  const handleDelete = (index) => {
+    const updatedList = [...todoList];
+    updatedList.splice(index, 1);
+    setTodoList(updatedList);
+  };
+
   return (
     <>
       <div>
@@ -28,7 +34,10 @@ function App() {
       <div>
         <ul>
           {todoList.map((todo, index) => (
-            <li key={index}>{todo}</li>
+            <li key={index}>
+              {todo}
+              <button onClick={() => handleDelete(index)}>X</button>
+            </li>
           ))}
         </ul>
       </div>
