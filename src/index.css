@@ -5,6 +5,59 @@
   list-style: none;
 }
 
+li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: none;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+
+  padding: 1.5rem;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+}
+
 button {
-  padding: 4px;
+  height: 1.75rem;
+  padding: 0 0.5rem;
+}
+
+#priority {
+  aspect-ratio: 1;
+}
+
+#add-button {
+  margin-left: auto;
+}
+
+.delete-button {
+  margin-left: auto;
+}
+
+.important {
+  margin-right: 0.2rem;
 }
